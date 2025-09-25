@@ -2,10 +2,6 @@
 %
 % driver file ic.tex to produce text
 
-\preto\OLEndChapterHook{\IfFileExists{include/summary-\thechapter}
-        {\section*{Summary}\addcontentsline{toc}{section}{Summary}
-        \let\emph\textbf\input{include/summary-\thechapter}\let\emph\textit}{}}
-
 \problemsperchapter
 \allowdisplaybreaks
 
